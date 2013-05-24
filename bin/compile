@@ -18,7 +18,7 @@ echo "-----> Fetching nginx binaries"
 curl $NGINX_PACKAGE -s -o - | tar xzf - -C $VENDORED_NGINX
 
 # vendor nginx into the slug
-echo "-----> Vendoring nginx $NGINX_VERSION"
+echo "-----> Vendoring Nginx"
 mkdir -p "$BUILD_DIR/bin"
 cp "$VENDORED_NGINX/sbin/nginx" "$BUILD_DIR/bin/nginx"
 
