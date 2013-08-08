@@ -19,9 +19,13 @@ NGINX_INCLUDES=(
 "http_spdy_module"
 )
 
-NGINX_DEPENDENCIES=("pcre|ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.32.tar.gz")
+NGINX_DEPENDENCIES=("pcre|https://s3.amazonaws.com/heroku-nginx-extras/pcre-8.33.tar.gz")
 
-NGINX_MODULES=("https://s3.amazonaws.com/heroku-nginx-extras/ngx_http_auth_request_module-a29d74804ff1.tar.gz")
+NGINX_MODULES=(
+"https://s3.amazonaws.com/heroku-nginx-extras/ngx_devel_kit-0.2.18.tar.gz"
+"https://s3.amazonaws.com/heroku-nginx-extras/ngx_http_auth_request_module-a29d74804ff1.tar.gz"
+"https://s3.amazonaws.com/heroku-nginx-extras/set-misc-nginx-module-0.22rc8.tar.gz"
+)
 NGINX_CONTRIB_DIR="contrib"
 
 
